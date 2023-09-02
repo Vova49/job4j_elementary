@@ -76,5 +76,4 @@ class X2Test {
 
         assertThat(rsl).isEqualTo(expected);
     }
-
 }
