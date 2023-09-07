@@ -15,7 +15,6 @@ class FactorialTest {
 
     @Test
     void whenCalculateFactorialForZeroThenOne() {
-        /* напишите здесь тест, проверяющий, что факториал для числа 0 равен 1. */
         int expected = 1;
         int n = 0;
         int out = Factorial.calc(n);
