@@ -6,9 +6,7 @@ public class Matrix {
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                int sum = (i + 1) * (j + 1);
-                array[j][i] = sum;
-
+                array[j][i] = (i + 1) * (j + 1);
             }
         }
         return array;
