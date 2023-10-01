@@ -17,12 +17,10 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-
         result += symbol;
         if (counter > 1) {
             result += counter;
         }
-
         return result;
     }
 }

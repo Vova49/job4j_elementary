@@ -7,7 +7,6 @@ public class Machine {
         int[] coins = {10, 5, 2, 1};
         int[] rsl = new int[100];
         int size = 0;
-
         for (int coin : coins) {
             while (money - price >= coin) {
                 money -= coin;
@@ -15,7 +14,6 @@ public class Machine {
                 size++;
             }
         }
-
         return Arrays.copyOf(rsl, size);
     }
 }
