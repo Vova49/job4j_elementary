@@ -25,10 +25,10 @@ class PointTest {
     }
 
     @Test
-    void when02to20then2() {
-        double expected = 2;
+    void when02to2then0() {
+        double expected = 0;
         Point a = new Point(0, 2);
-        Point b = new Point(2, 0);
+        Point b = new Point(0, 2);
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
@@ -41,4 +41,5 @@ class PointTest {
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
 }
