@@ -42,4 +42,13 @@ class PointTest {
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
+    @Test
+    void when096to001then9() {
+        double expected = 6;
+        Point a1 = new Point(0, 6, 1);
+        Point b1 = new Point(0, 0, 1);
+        double out = a1.distance3d(b1);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
+
 }
